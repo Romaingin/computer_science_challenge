@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Info</title>
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/codemirror.css">
+	<link rel="stylesheet" href="css/eclipse.css">
+	<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+
+	<script src="js/codemirror.js"></script>
+	<script src="js/javascript.js"></script>
+	<script src="js/active-line.js"></script>
+	<script src="js/matchbrackets.js"></script>
+</head>
+<body>
+	<div class="container">
+		<h1>Title</h1>
+		<h2>Subject</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<pre class="prettyprint">
+class Foo:
+	def __init__(self, a):
+		self.a = a
+
+	def bar(self):
+		pass
+		</pre>
+		<h4>Objectives</h4>
+
+		<blockquote>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+		</blockquote>
+
+
+		<h4>Entries</h4>
+
+		<blockquote>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+		</blockquote>
+
+		<h4>Outputs</h4>
+
+		<blockquote>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+		</blockquote>
+
+		<button data-toggle="collapse" data-target="#info" class="btn btn-default btn-lg btn-block">Show extra information</button>
+
+		<div id="info" class="collapse">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+
+
+		<h3>Submit your code</h3>
+		</br>
+
+		<p>
+			The module <code class="prettyprint">numpy as py</code> has been imported.
+		</p>
+
+		<form id="submit_code_form" action="ex1" method="post">
+		<textarea id="code" name="proposed_code">print("42")</textarea>
+		</br>
+			<input class="btn btn-primary btn-lg btn-block" type="submit" value="Submit">
+		</form>
+
+	<script>
+		var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
+			styleActiveLine: true,
+			matchBrackets: true
+		});
+	</script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/misc.js"></script>
+</body>
+</html>
