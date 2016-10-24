@@ -13,6 +13,9 @@ To create a new exercise, add a new `*.ex` file in the `exercices/` folder with 
 
 ```
 Name of the exercice
+=======
+`Name of the exercice
+>>>>>>> c83499479305ec91781ca65ef62477c31f34a85a
 ###&###
 Sample description
 ###&###
@@ -33,5 +36,6 @@ Expected result 1
 Python test code 2
 #&#
 Expected result 2
+<<<<<<< HEAD
 ...
 ```
