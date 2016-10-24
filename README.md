@@ -35,3 +35,6 @@ Python test code 2
 Expected result 2
 ...
 ```
+
+`###&###` are used as separators for parsing.
+The exercices are added automaticaly.
