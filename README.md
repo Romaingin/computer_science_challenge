@@ -1,3 +1,7 @@
-# Python Challenge web interface #
+# Python Challenge web interface
 
 Provide a simple interface for python training. The exercice is explained in details, and one can submit code which will be computed on the server side.
+
+## Running the server
+
+Use `sudo python server.py` to run the server through the port specified in the `server.py` file.

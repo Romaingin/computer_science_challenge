@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Info</title>
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/codemirror.css">
+	<link rel="stylesheet" href="css/eclipse.css">
+	<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+
+	<script src="js/codemirror.js"></script>
+	<script src="js/javascript.js"></script>
+	<script src="js/active-line.js"></script>
+	<script src="js/matchbrackets.js"></script>
+</head>
+<body>
+	<div class="container">
+		<h1><!--SUBJECT---></h1>
+
+		<!--STATEMENT--->
+
+		<button data-toggle="collapse" data-target="#info" class="btn btn-default btn-lg btn-block">Show extra information</button>
+
+		<div id="info" class="collapse">
+		<!--EXTRA--->
+		</div>
+
+
+		<h3>Submit your code</h3>
+		</br>
+
+		<!--BEFORE CODE--->
+
+		<form id="submit_code_form" action="r<!--EXERCICE ID--->" method="post">
+		<textarea id="code" name="proposed_code">print("42")</textarea>
+		</br>
+			<input class="btn btn-primary btn-lg btn-block" type="submit" value="Submit">
+		</form>
+
+	<script>
+		var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
+			styleActiveLine: true,
+			matchBrackets: true
+		});
+	</script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/misc.js"></script>
+</body>
+</html>
